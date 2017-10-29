@@ -1,0 +1,3 @@
+{%for x in lst%}
+<p><a href="/user/{{x["_json"]["user"]["screen_name"]}}">{{x["_json"]["user"]["screen_name"]}}</a>-- {{x["_json"]["text"]}}</p>
+{%endfor%}

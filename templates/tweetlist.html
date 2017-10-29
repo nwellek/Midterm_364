@@ -1,0 +1,7 @@
+{%if Scren_name == "The_Real_NW"%}
+<h1> This is my page </h1>
+{%endif%}
+<h1> {{Scren_name}} </h1>
+{%for x in Tweets%}
+<h2> {{x.text}} </h2>
+{%endfor%}

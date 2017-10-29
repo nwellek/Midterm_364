@@ -1,0 +1,15 @@
+<html>
+<body>
+
+{% block content %}
+  <h1>Enter a geolocation:</h1>
+  <form method="POST" action="http://localhost:5000/tweets-for-loc">
+      <p>{{ form.lat.label }}{{ form.lat() }}</p>
+      <p>{{ form.lng.label }}{{ form.lng() }}</p>
+      {{ form.submit() }}
+  </form>
+{% endblock %}
+
+
+</body>
+</html>
